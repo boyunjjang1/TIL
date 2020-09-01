@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Redirect, Switch} from "react-router-dom
 // Switch는 한번에 하나의 Route만 rendering 하게 해준다
 import Home from "Routes/Home";
 import TV from "Routes/TV";
-import Search from "../Routes/Search";
+import Search from "../Routes/Search/SearchContainer";
 import Header from "./Header";
 
 export default () => (
