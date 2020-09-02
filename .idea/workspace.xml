@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b04eadc0-80ca-4344-a3b9-800f60e2a080" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wooah_tech_run/TypeScript/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b04eadc0-80ca-4344-a3b9-800f60e2a080" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +52,7 @@
       <workItem from="1598911270209" duration="11000" />
       <workItem from="1598916438869" duration="25000" />
       <workItem from="1598961879752" duration="53000" />
-      <workItem from="1598996179571" duration="1289000" />
+      <workItem from="1598996179571" duration="1823000" />
     </task>
     <servers />
   </component>
