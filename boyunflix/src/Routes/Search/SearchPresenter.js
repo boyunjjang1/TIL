@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Loader from "Components/Loader";
 import Section from "Components/Section";
+import Message from "../../Components/Message";
 
 const Container = styled.div`
   padding: 0px 20px;
@@ -39,6 +40,9 @@ const SearchPresenter = ({movieResults, tvResults, searchTerm, updateTerm, handl
                 </Section>}
             </>
         )}
+        {error && <Message color="red" text={error}/>}
+        {tvResults && movieResults && tvResults.length === 0 && movieResults.length === 0 &&
+         <Message color="#95a5a6" text={`Nothing found for:${searchTerm}`}/>}
     </Container>
 );
 // Enter 누르면 browser가 input시켜 버림, 새로고침되고 state가 사라진다! --> 문제점
