@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from "styled-components"
-import { countReset } from 'console';
 
-const Container = styled.span`
-        
+const Container = styled.span<{isBlue:boolean}>`
+    color:${props => (props.isBlue ? "blue" : "black")}
 `;
 
 interface Iprops{
@@ -11,7 +10,7 @@ interface Iprops{
 }
 
 const Number: React.FunctionComponent<Iprops> = ({count}) =>(
-    <Container>
+    <Container isBlue={count > 10}>
        {count}
     </Container>
 )
