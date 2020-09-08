@@ -1,0 +1,31 @@
+.father {
+    display: flex;
+    /* flex-direction: row => default; */
+    /* colum-reverse, 그 행이나 열에 한해서 reverse */
+    flex-direction: row-reverse;
+    /* Main Axis */
+    justify-content: space-around;
+    height: 200vh;
+    /* align-content flex box사이의 공간 속성 */
+    align-content: space-between;
+    /* 너비가 바뀌더라도 flex는 같은줄에 있길 원함 width 가 200이어도 200이 안나옴 */
+    /* 즉, flex -> 너비 상관안씀 */
+     /*flex-wrap : nowrap => default  */
+     /* wrap: 크기를 유지해라  */
+     /* wrap-reverse: wrap의 순서에 한해서 reverse */
+    flex-wrap: wrap-reverse;
+}
+ /* child에게 속성을 주고싶으면 부모에게 height를 줘야 작동함  */
+
+.child {
+    width: 200px;
+    height: 200px;
+    background: peru;
+    color: white;
+    font-size: 50px;
+    /* 숫자들을 가운데로 오게 하기 위해 ㅋㅅㅋ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
