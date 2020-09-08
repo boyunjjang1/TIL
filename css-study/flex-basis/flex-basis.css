@@ -1,0 +1,27 @@
+.father {
+    display: flex;
+    /* Main Axis */
+    justify-content: space-around;
+    /* column으로 주면 main Axis가 세로축으로 바껴서 세로기준으로 flex-basis가 적용됨 */
+    /* flex-direction: column; */
+    height: 100vh; 
+}
+ /* child에게 속성을 주고싶으면 부모에게 height를 줘야 작동함  */
+
+ /* flex-basis 는 child에게 적용하는 property, 기본 크기를 주는 속성! 늘어나거나 줄어들면 바뀜 */
+.child {
+    /* flex-basis, width다 main Axis에 적용되는 속성임 */
+    flex-basis: 100px;
+    background: peru;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.child:nth-child(2){
+    background-color: #000;
+    flex-grow: 0;
+}
+

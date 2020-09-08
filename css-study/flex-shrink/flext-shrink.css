@@ -1,0 +1,24 @@
+.father {
+    display: flex;
+    /* Main Axis */
+    justify-content: space-around;
+    height: 100vh; 
+}
+ /* child에게 속성을 주고싶으면 부모에게 height를 줘야 작동함  */
+
+.child {
+    width: 200px;
+    height: 200px;
+    background: peru;
+    color: white;
+}
+
+/* flex-shrink : element행동정의 */
+.child:nth-child(2){
+    background: #000;
+    /* flex-shrink : 1 --> default */
+    /* 2면 다른 element들에 비해 2배로 줄어듦 */
+    flex-shrink: 2;
+}
+
+
