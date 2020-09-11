@@ -1,0 +1,31 @@
+.grid{
+     display: grid;
+     gap: 10px;
+     height: 50vh;
+     /* grid-template-columns: repeat(4, 1fr);*/
+     /* fraction : 사용가능한 공간 전부 */
+     /* grid-template-rows:  repeat(4,1fr); */ 
+     grid-template: [header-start] "header header header header"  1fr [header-end]
+                    [content-start] "content content content nav" 2fr [content-end] 
+                    [footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr;
+}
+
+.header {
+    background-color: green;
+    grid-area: header;
+}
+
+.content {
+    background-color: blue;
+    grid-area: content;
+}
+
+.nav {
+    background-color: pink;
+    grid-area: nav;
+}
+
+.footer {
+    background-color: aquamarine;
+    grid-area: footer;
+}

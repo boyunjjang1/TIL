@@ -1,0 +1,17 @@
+.father {
+    display:grid;
+    grid-template-columns: 250px 250px 250px;
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    gap: 10px;
+    grid-template-rows: 100px 50px 300px;
+}
+ /* child에게 속성을 주고싶으면 부모에게 height를 줘야 작동함  */
+.child {
+    background: peru;
+    color: white;
+    font-size: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

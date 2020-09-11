@@ -1,0 +1,33 @@
+.grid{
+    display: grid;
+    gap: 10px;
+    height: 50vh;
+    grid-template-columns: repeat(4, 1fr);
+    /* fraction : 사용가능한 공간 전부 */
+    grid-template-rows:  repeat(4,1fr); 
+    /* justify-items: stretch --> default , 글자 div에 상관없이 width늘려서 채움 */
+    /* start: div안에 글자수 만큼 width 참 */
+    /* justify-items: center; */
+    /* align-items: start;  */
+    /* align-items: 수직 기준으로 계산 */
+    /* item들은 div안에 텍스트가 없으면 계산이 안됨  */
+
+    /* y / x */
+    place-items: stretch center;
+}
+
+.header {
+   background-color: green;
+}
+
+.content {
+   background-color: blue;
+}
+
+.nav {
+   background-color: pink;
+}
+
+.footer {
+   background-color: aquamarine;
+}
